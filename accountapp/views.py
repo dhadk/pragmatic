@@ -32,8 +32,8 @@ class AccountCreateView(CreateView):
 
 class AccountDetailView(DetailView):
     model = User
-    context_object_name = 'target_user'
     template_name = 'accountapp/detail.html'
+    context_object_name = 'target_user'
 
 
 class AccountUpdateView(UpdateView):
@@ -41,9 +41,11 @@ class AccountUpdateView(UpdateView):
     form_class = AccountUpdateFrom
     success_url = reverse_lazy('accountapp:hello_world')
     template_name = 'accountapp/update.html'
+    context_object_name = 'target_user'
 
 
 class AccountDeleteView(DeleteView):
     model = User
     success_url = reverse_lazy('accountapp:login')
     template_name = 'accountapp/delete.html'
+    context_object_name = 'target_user'
