@@ -14,4 +14,28 @@
 
     <!-- DEFAULT CSS LINK -->
     <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
+
+    <!-- FONT -->
+    <style>
+        @font-face {
+            font-family: 'NanumSquareOTFRegular';
+            src: local('NanumSquareOTFRegular.otf'),
+            url({% static 'fonts/NanumSquareOTFRegular.otf' %}) format('opentype');
+        }
+        @font-face {
+            font-family: 'NanumSquareOTFExtraBold';
+            src: local('NanumSquareOTFExtraBold.otf'),
+            url({% static 'fonts/NanumSquareOTFExtraBold.otf' %}) format('opentype');
+        }
+        @font-face {
+            font-family: 'NanumSquareOTFBold';
+            src: local('NanumSquareOTFBold.otf'),
+            url({% static 'fonts/NanumSquareOTFBold.otf' %}) format('opentype');
+        }
+        @font-face {
+            font-family: 'NanumSquareOTFLight';
+            src: local('NanumSquareOTFLight.otf'),
+            url({% static 'fonts/NanumSquareOTFLight.otf' %}) format('opentype');
+        }
+    </style>
 </head>
